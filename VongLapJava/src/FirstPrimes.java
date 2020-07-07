@@ -1,15 +1,14 @@
-package VongLapJava;
-
 import java.util.Scanner;
 
-public class PrimesUnder100 {
+public class FirstPrimes {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter the limit: ");
-        int limit = scanner.nextInt();
+        System.out.println("Enter the number of First Primes: ");
+        int number = input.nextInt();
 
-        for (int i=2; i<limit; i++) {
+        int count = 0;
+        for (int i=2; count<number; i++) {
             boolean isPrime = true;
             for (int j=2; j<=Math.sqrt(i); j++) {
                 if (i % j == 0) {
@@ -19,6 +18,7 @@ public class PrimesUnder100 {
             }
             if (isPrime) {
                 System.out.print(i+" ");
+                count++;
             }
         }
     }

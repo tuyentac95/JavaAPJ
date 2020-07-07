@@ -1,5 +1,3 @@
-package IntroductionToJava;
-
 import java.util.Scanner;
 
 public class ConvertNumToText {

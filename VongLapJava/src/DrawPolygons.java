@@ -1,5 +1,3 @@
-package VongLapJava;
-
 import java.util.Scanner;
 
 public class DrawPolygons {

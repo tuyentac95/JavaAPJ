@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/IntroductionToJava/IntroductionToJava.iml" filepath="$PROJECT_DIR$/IntroductionToJava/IntroductionToJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java APJ.iml" filepath="$PROJECT_DIR$/Java APJ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MangVaPhuongThucJava/MangVaPhuongThucJava.iml" filepath="$PROJECT_DIR$/MangVaPhuongThucJava/MangVaPhuongThucJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VongLapJava/VongLapJava.iml" filepath="$PROJECT_DIR$/VongLapJava/VongLapJava.iml" />
     </modules>
   </component>
 </project>
