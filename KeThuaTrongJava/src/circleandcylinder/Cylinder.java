@@ -27,8 +27,8 @@ public class Cylinder extends Circle1 {
     public String toString() {
         return "Cylinder{"
                 + "radius=" + super.getRadius()
-                + "height=" + this.getHeight()
-                + "volume=" + this.getVolume()
+                + ", height=" + this.getHeight()
+                + ", volume=" + this.getVolume()
                 + '}';
     }
 }
