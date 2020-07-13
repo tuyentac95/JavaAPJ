@@ -1,6 +1,8 @@
 package resizeable;
 
-public class Square implements Resizeable{
+import colorable.Colorable;
+
+public class Square implements Resizeable, Colorable {
     private double side = 3.0;
     private String color = "blue";
 
@@ -43,5 +45,10 @@ public class Square implements Resizeable{
     @Override
     public void resize(double percent) {
         this.setSide(this.side*percent/100);
+    }
+
+    @Override
+    public void howToColor() {
+        System.out.println("Square can be colored");
     }
 }
