@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AbstractClassAndInterfaceJava/AbstractClassAndInterfaceJava.iml" filepath="$PROJECT_DIR$/AbstractClassAndInterfaceJava/AbstractClassAndInterfaceJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/AccessModifierAndStaticJava/AccessModifierAndStaticJava.iml" filepath="$PROJECT_DIR$/AccessModifierAndStaticJava/AccessModifierAndStaticJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/IntroductionToJava/IntroductionToJava.iml" filepath="$PROJECT_DIR$/IntroductionToJava/IntroductionToJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java APJ.iml" filepath="$PROJECT_DIR$/Java APJ.iml" />
