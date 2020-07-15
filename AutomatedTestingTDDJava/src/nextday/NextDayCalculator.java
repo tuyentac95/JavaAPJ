@@ -53,6 +53,7 @@ public class NextDayCalculator {
         boolean isYearDivisibleBy400 = year % 400 == 0;
         boolean isYearDivisibleBy100 = year % 100 == 0;
         boolean isYearDivisibleBy4 = year % 4 == 0;
+
         if (isYearDivisibleBy400) return true;
         else {
             if (isYearDivisibleBy100) return false;
