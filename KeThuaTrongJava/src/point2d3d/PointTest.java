@@ -28,8 +28,6 @@ public class PointTest {
 
         point_4.setXYZ(-21f, 0f, 53.7f);
         System.out.println("Point 4 after: " + point_4);
-
-
     }
 
 
