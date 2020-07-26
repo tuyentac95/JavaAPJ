@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CalculatorExample {
+public class CalculationExample {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Hãy nhập x: ");
@@ -8,7 +8,7 @@ public class CalculatorExample {
         System.out.println("Hãy nhập y: ");
         int y = scanner.nextInt();
 
-        CalculatorExample calc = new CalculatorExample();
+        CalculationExample calc = new CalculationExample();
         calc.calculate(x,y);
     }
 
