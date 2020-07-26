@@ -1,5 +1,6 @@
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Scanner;
 import java.util.Stack;
 
 public class CheckPalindrome {
@@ -18,6 +19,9 @@ public class CheckPalindrome {
     }
 
     public static void main(String[] args) {
-        System.out.println(checkPalindrome("abcba"));
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your string: ");
+        String str = sc.nextLine();
+        System.out.println(checkPalindrome(str));
     }
 }
