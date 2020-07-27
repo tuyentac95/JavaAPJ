@@ -1,13 +1,11 @@
 package readfilecsv;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class CSVReader {
     public static void main(String[] args) {
-        String csvFile = "E:\\Codegym\\Java APJ\\IOTextFileJava\\src\\readfilecsv\\country.csv";
+        File file = new File("IOTextFileJava\\src\\readfilecsv\\country.csv");
+        String csvFile = file.getAbsolutePath();
         BufferedReader br = null;
         String line = "";
         String csvSplitBy = ",";

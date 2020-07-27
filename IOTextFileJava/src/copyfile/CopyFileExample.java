@@ -3,25 +3,30 @@ package copyfile;
 import java.io.*;
 
 public class CopyFileExample {
-    public static void main(String[] args) throws IOException {
-        InputStream inStream = null;
-        OutputStream outSteam = null;
+    public static void main(String[] args) {
         try {
-            inStream = new FileInputStream(new File("E:\\Codegym\\Java APJ\\IOTextFileJava\\src\\copyfile\\file1.txt"));
-            outSteam = new FileOutputStream(new File("E:\\Codegym\\Java APJ\\IOTextFileJava\\src\\copyfile\\file2.txt"));
+            File file1 = new File("IOTextFileJava\\src\\copyfile\\file1.txt");
+            File file2 = new File("IOTextFileJava\\src\\copyfile\\file2.txt");
 
-            int length;
-            byte[] buffer = new byte[1024];
+            BufferedReader brRead = new BufferedReader(new FileReader(file1));
+            BufferedWriter brWrite = new BufferedWriter(new FileWriter(file2));
 
-            while ((length = inStream.read(buffer)) > 0) {
-                outSteam.write(buffer,0,length);
+            String line = "";
+
+            while ((line = brRead.readLine()) != null) {
+                brWrite.write(line + "\n");
             }
-            System.out.println("File is copied successful!");
+
+            brRead.close();
+            brWrite.close();
+
+            System.out.println("Done");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            inStream.close();
-            outSteam.close();
         }
+
+
     }
 }

@@ -1,2 +1,3 @@
 Hello Java!
 Welcome to CodeGym!
+Today is cold!
