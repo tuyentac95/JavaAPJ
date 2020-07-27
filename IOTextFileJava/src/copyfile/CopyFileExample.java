@@ -12,8 +12,10 @@ public class CopyFileExample {
             BufferedWriter brWrite = new BufferedWriter(new FileWriter(file2));
 
             String line = "";
+            int count = 0;
 
             while ((line = brRead.readLine()) != null) {
+                count += line.length();
                 brWrite.write(line + "\n");
             }
 
@@ -21,6 +23,7 @@ public class CopyFileExample {
             brWrite.close();
 
             System.out.println("Done");
+            System.out.println("Number of char: " + count);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
