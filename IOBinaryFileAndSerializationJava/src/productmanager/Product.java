@@ -1,6 +1,8 @@
 package productmanager;
 
-public class Product {
+import java.io.Serializable;
+
+public class Product implements Serializable {
     private String id;
     private String name;
     private String manufacturer;
@@ -66,5 +68,16 @@ public class Product {
         info[3] = String.valueOf(this.price);
         info[4] = String.valueOf(this.color);
         return info;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", manufacturer='" + manufacturer + '\'' +
+                ", price=" + price +
+                ", color='" + color + '\'' +
+                '}';
     }
 }

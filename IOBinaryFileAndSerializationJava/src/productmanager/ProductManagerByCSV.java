@@ -2,10 +2,10 @@ package productmanager;
 
 import java.io.*;
 
-public class ProductManager {
+public class ProductManagerByCSV {
     private static File productList;
 
-    public ProductManager() throws IOException {
+    public ProductManagerByCSV() throws IOException {
         productList = new File("IOBinaryFileAndSerializationJava\\src\\productmanager\\productList.csv");
     }
 
@@ -42,7 +42,7 @@ public class ProductManager {
     }
 
     public static void main(String[] args) throws IOException {
-        ProductManager productManager = new ProductManager();
+        ProductManagerByCSV productManager = new ProductManagerByCSV();
 
         Product product1 = new Product("A001","Book","ABC",50000,"red");
         Product product2 = new Product("A002","Notebook","AAA",10000,"yellow");
