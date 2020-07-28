@@ -4,6 +4,10 @@ public class MyLinkedList {
     private Node head;
     private int numNodes;
 
+    public int getNumNodes() {
+        return numNodes;
+    }
+
     public MyLinkedList(Object data) {
         head = new Node(data);
     }

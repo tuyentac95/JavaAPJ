@@ -53,6 +53,12 @@ public class MyArrayList1<E> {
         return check;
     }
 
+//    public int indexOf(E o) {
+//        for (int i=0; i < size; i++) {
+//            if elements[i] ==
+//        }
+//    }
+
     public void ensureCapacity(int minCapacity) {
         int new_Size = elements.length * 2;
         while (new_Size < minCapacity) {

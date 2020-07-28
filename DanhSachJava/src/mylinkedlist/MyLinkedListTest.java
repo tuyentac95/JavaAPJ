@@ -13,5 +13,7 @@ public class MyLinkedListTest {
         linkedList.add(4,8);
 
         linkedList.printList();
+        System.out.println(linkedList.getNumNodes());
+
     }
 }

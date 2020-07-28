@@ -24,12 +24,8 @@ public class CopyFileExample {
 
             System.out.println("Done");
             System.out.println("Number of char: " + count);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 }
