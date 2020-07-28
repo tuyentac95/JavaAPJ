@@ -4,16 +4,13 @@ import java.io.*;
 
 public class ProductManager {
     private static File productList;
-    private static BufferedWriter bWriter;
-    private static BufferedReader bReader;
 
     public ProductManager() throws IOException {
         productList = new File("IOBinaryFileAndSerializationJava\\src\\productmanager\\productList.csv");
-        bWriter = new BufferedWriter(new FileWriter(productList));
-        bReader = new BufferedReader(new FileReader(productList));
     }
 
     public void addProduct(Product product) throws IOException {
+        BufferedWriter bWriter = new BufferedWriter(new FileWriter(productList,true));
         String[] info = product.infoToString();
         bWriter.write(info[0]);
         for (int i=1; i < info.length; i++) {
@@ -24,6 +21,7 @@ public class ProductManager {
     }
 
     public void display() throws IOException {
+        BufferedReader bReader = new BufferedReader(new FileReader(productList));
         System.out.println("===== Product List: =====");
         String line = "";
         while ((line = bReader.readLine()) != null) {
@@ -32,6 +30,7 @@ public class ProductManager {
     }
 
     public void search(String id) throws IOException {
+        BufferedReader bReader = new BufferedReader(new FileReader(productList));
         System.out.println("===== Find product =====");
         String line = "";
         while ((line = bReader.readLine()) != null) {
@@ -55,6 +54,6 @@ public class ProductManager {
 
         productManager.display();
 
-        productManager.search("A002");
+        productManager.search("A001");
     }
 }
