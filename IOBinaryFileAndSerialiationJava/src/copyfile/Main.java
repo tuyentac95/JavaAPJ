@@ -41,7 +41,7 @@ public class Main {
         File destFile = new File(destPath);
 
         try {
-            copyFileUsingStream(sourceFile,destFile);
+            copyFileUsingJavaFiles(sourceFile,destFile);
             System.out.println("Copy completed");
         } catch (IOException e) {
             System.out.println("Can't copy that file");
