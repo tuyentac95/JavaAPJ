@@ -32,6 +32,9 @@ public class ProductManagerByBinary {
         }
 
         productManager.display();
+
+        productManager.searchProduct("B004");
+        productManager.searchProduct("A005");
     }
 
     private static File fileProduct;
@@ -74,11 +77,14 @@ public class ProductManagerByBinary {
         }
     }
 
-    public void SearchProduct(String id) {
+    public void searchProduct(String id) {
+        System.out.println("=== Search Product ===");
         for (Product product : listProduct) {
             if (product.getId().compareTo(id) == 0) {
                 System.out.println(product);
+                return;
             }
         }
+        System.out.println("Cannot find this Product");
     }
 }
