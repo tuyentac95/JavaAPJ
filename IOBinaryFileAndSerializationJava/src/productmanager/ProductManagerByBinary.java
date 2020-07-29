@@ -35,6 +35,20 @@ public class ProductManagerByBinary {
 
         productManager.searchProduct("B004");
         productManager.searchProduct("A005");
+
+        ArrayList<Product> newList = null;
+
+        try {
+            newList = productManager.readFile();
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("==== New List ===");
+        for (Product product : newList) {
+            System.out.println(product);
+        }
+
     }
 
     private static File fileProduct;
@@ -56,14 +70,18 @@ public class ProductManagerByBinary {
         }
     }
 
-    public void readFile() throws IOException, ClassNotFoundException {
+    public ArrayList<Product> readFile() throws IOException, ClassNotFoundException {
         FileInputStream fileIS = new FileInputStream(fileProduct);
         ObjectInputStream objectIS = new ObjectInputStream(fileIS);
-        listProduct.clear();
+        ArrayList<Product> newList = new ArrayList<>();
         Product product = null;
-        while ((product = (Product) objectIS.readObject()) != null) {
-            listProduct.add(product);
+        try {
+            while ((product = (Product) objectIS.readObject()) != null) {
+                newList.add(product);
+            }
+        } catch (EOFException e) {
         }
+        return newList;
     }
 
     public void addProduct(Product product) {

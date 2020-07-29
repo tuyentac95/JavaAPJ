@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/SearchAlgorithmJava/SearchAlgorithmJava.iml" filepath="$PROJECT_DIR$/SearchAlgorithmJava/SearchAlgorithmJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/SortingAlgorithmJava/SortingAlgorithmJava.iml" filepath="$PROJECT_DIR$/SortingAlgorithmJava/SortingAlgorithmJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/StackAndQueueJava/StackAndQueueJava.iml" filepath="$PROJECT_DIR$/StackAndQueueJava/StackAndQueueJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThreadingJava/ThreadingJava.iml" filepath="$PROJECT_DIR$/ThreadingJava/ThreadingJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/VongLapJava/VongLapJava.iml" filepath="$PROJECT_DIR$/VongLapJava/VongLapJava.iml" />
     </modules>
   </component>
