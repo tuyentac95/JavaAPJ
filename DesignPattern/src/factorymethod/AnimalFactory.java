@@ -1,4 +1,4 @@
-package FactoryMethod;
+package factorymethod;
 
 public class AnimalFactory {
     public Animal getAnimal(String type) {
